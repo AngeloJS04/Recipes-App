@@ -31,7 +31,8 @@ const CardMeals = ({ data, id }: { id: string | undefined, data: any }) => {
                         shadow-[0px_0px_12px_3px_rgba(0,0,0,0.1)]  border border-gray-100 p-3 items-center justify-center'>
                                 <img className='w-60 rounded-full' src={meal?.strMealThumb} alt={meal?.strMeal} />
                                 <p className='text-base font-semibold  tracking-tight text-dark sm:text-1xl'>{meal?.strMeal}</p>
-                                <button>See details</button>
+                                <button className=' hover:bg-red-700 text-white font-bold py-0 px-1 rounded mt-2'
+                                >See recipe</button>
                             </div>
                         ))
                     }
