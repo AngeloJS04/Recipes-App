@@ -22,7 +22,7 @@ const CardMeals = ({ data, id }: { id: string | undefined, data: any }) => {
                     className="absolute inset-0 blur-sm -z-10 h-full w-full object-cover  md:object-center" />
                 <h2 className='text-4xl text-center font-bold tracking-tight text-white sm:text-6xl mt-10'>{id}'s meals</h2>
                 <hr className='mx-20 my-4 border border-white' />
-                <div className='grid grid-cols-1 md:grid-cols-6 mx-5 gap-5 mt-10'>
+                <div className='grid grid-cols-2 md:grid-cols-6 mx-5 gap-5 mt-10'>
                     {
                         data.meals.map((meal: any) => (
                             <div key={meal?.idMeal}
