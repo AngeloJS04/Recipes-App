@@ -26,8 +26,8 @@ const Header = () => {
                     <div className="grid grid-cols-3 md:grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-dark sm:grid-cols-2 md:flex lg:gap-x-10">
                         {stats.map((stat) => (
                             <div key={stat.name} className="flex flex-col-reverse">
-                                <dt className="text-base leading-7 text-gray-900">{stat.name}</dt>
-                                <dd className="text-2xl font-bold leading-9 tracking-tight text-dark">{stat.value}</dd>
+                                <dt className="text-base leading-7 text-white">{stat.name}</dt>
+                                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
                             </div>
                         ))}
                     </div>
