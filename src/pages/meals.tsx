@@ -19,7 +19,7 @@ const Meals = () => {
                     </div>
                     : data?.meals ? <CardMeals data={data} id={id} />
                         : <>
-                            <h2 className='text-4xl text-center font-bold tracking-tight text-dark sm:text-4xl mt-10'>No meals found for {id}</h2>
+                            <h2 className='text-4xl text-center font-bold tracking-tight text-white sm:text-4xl mt-10'>No meals found for {id}</h2>
                             <div className='flex justify-center mt-16'>
                                 <img width="100" height="100" src="https://img.icons8.com/ios/50/meal.png" alt="warning-emoji" />
                             </div>

@@ -1,5 +1,5 @@
 
-import wave from '../../assets/wave.svg'
+import wave from '../../assets/pattern.svg'
 
 const Header = () => {
     const stats = [
@@ -33,7 +33,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%' }}>
+            <div className='m' style={{ position: 'absolute', bottom: 0, left: 0, width: '100%' }}>
                 <img src={wave} alt="dsd" />
             </div>
         </div>
