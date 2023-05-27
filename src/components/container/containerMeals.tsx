@@ -1,7 +1,9 @@
 import React from 'react'
 import { DateModified } from '../../interface/categories.interface'
+import { useParams } from 'react-router-dom'
 
-const ContainerMeals = ({ children, data, id }: { children: React.ReactNode, data: DateModified[], id: string | undefined }) => {
+const ContainerMeals = ({ children, data }: { children: React.ReactNode, data: DateModified[] }) => {
+    const { id } = useParams()
     return (
         <div className="isolate my-10">
             <img

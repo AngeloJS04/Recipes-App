@@ -1,5 +1,7 @@
+import { useParams } from "react-router-dom"
 
-const NotFound = ({ title, id }: { title: string, id: string | undefined }) => {
+const NotFound = ({ title, }: { title: string }) => {
+    const { id } = useParams()
     return (
         <>
             <h2 className='text-4xl text-center font-bold tracking-tight text-white sm:text-4xl mt-10'>{title} {id}</h2>
