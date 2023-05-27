@@ -3,7 +3,7 @@ import { DateModified } from '../../interface/categories.interface'
 
 const ContainerMeals = ({ children, data, id }: { children: React.ReactNode, data: DateModified[], id: string | undefined }) => {
     return (
-        <div className="isolate">
+        <div className="isolate my-10">
             <img
                 src={data[4]?.strMealThumb ? data[4]?.strMealThumb : data[0]?.strMealThumb}
                 style={{ opacity: 0.8 }}
