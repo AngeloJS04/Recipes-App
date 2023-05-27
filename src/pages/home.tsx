@@ -12,7 +12,8 @@ const Home = () => {
     return (
         <Layout>
             <Container title='Categories'>
-                {data?.categories.map((category: CategoryProps) => <CardCategory key={category?.idCategory} category={category} />)}
+                {data?.categories.map((category: CategoryProps) =>
+                    <CardCategory key={category?.idCategory} category={category} />)}
             </Container>
         </Layout>
     )

@@ -4,7 +4,6 @@ import { useState } from "react"
 const MealsRecipe = ({ meal }: { meal: any }) => {
     const [showVideo, setShowVideo] = useState(false)
 
-
     let count = 20;
     return (
         <div className='grid grid-cols-1 md:grid-cols-12 py-8'>
