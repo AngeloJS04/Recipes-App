@@ -15,8 +15,8 @@ const Meals = () => {
         <div>
             {
                 loading ? <Loading />
-                    : data?.meals ? <CardMeals data={data.meals} id={id} />
-                        : <NotFound title='No meals found' id={id} />
+                    : data?.meals ? <CardMeals data={data.meals}  />
+                        : <NotFound title='No meals found'  />
             }
         </div>
     )
