@@ -6,13 +6,15 @@ import MealCard from "./mealCard"
 import MealsRecipe from "./mealReceipe"
 import Modal from "./modal"
 
-const CardMeals = ({ meals }: { meals: MealsDetailsProps[] }) => {
+const CardMealsList = ({ meals }: { meals: MealsDetailsProps[] }) => {
 
     const [active, setActive] = useState(false)
     const [meal, setMeal] = useState<any>({})
 
+    let FILTER_BY_ID = 'lookup.php?i='
+
     const getMealByID = async (id: string) => {
-        const res = await fetch(`${appConfig.server.api}/lookup.php?i=${id}`)
+        const res = await fetch(`${appConfig.server.api}/${FILTER_BY_ID}${id}`)
         const data = await res.json()
         setActive(!active)
         setMeal(data.meals[0])
@@ -35,4 +37,4 @@ const CardMeals = ({ meals }: { meals: MealsDetailsProps[] }) => {
         </React.Fragment>
     )
 }
-export default CardMeals
+export default CardMealsList

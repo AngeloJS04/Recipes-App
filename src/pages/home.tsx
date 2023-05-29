@@ -6,7 +6,10 @@ import useFetch from "../hooks/useFetch"
 import { CategoryProps } from "../interface/categories.interface"
 
 const Home = () => {
-    const API_URL = `${appConfig.server.api}/categories.php`
+
+    let GET_ALL_CATEGORY = 'categories.php'
+
+    const API_URL = `${appConfig.server.api}/${GET_ALL_CATEGORY}`
     const { data } = useFetch(API_URL)
 
     return (

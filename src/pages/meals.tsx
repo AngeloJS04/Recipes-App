@@ -8,15 +8,17 @@ import useFetch from '../hooks/useFetch';
 
 const Meals = () => {
     const { id } = useParams()
-    const API_URL = `${appConfig.server.api}/filter.php?c=${id}`
+    let FILTER_BY_CATEGORY = 'filter.php?c='
+    
+    const API_URL = `${appConfig.server.api}/${FILTER_BY_CATEGORY}${id}`
     const { data, loading } = useFetch(API_URL)
 
     return (
         <div>
             {
                 loading ? <Loading />
-                    : data?.meals ? <CardMealsList meals={data.meals}  />
-                        : <NotFound title='No meals found'  />
+                    : data?.meals ? <CardMealsList meals={data.meals} />
+                        : <NotFound title='No meals found' />
             }
         </div>
     )

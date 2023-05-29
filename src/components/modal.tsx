@@ -6,8 +6,7 @@ const Modal = ({ setActive, children, title, bg }: { setActive: Function, childr
     };
 
     return (
-        <div style={{ backgroundColor: 'rgba(0,0,0,0.7)' }} className="fixed inset-0 flex items-center justify-center  z-50" onClick={handleOverlayClick}
-        >
+        <div style={{ backgroundColor: 'rgba(0,0,0,0.7)' }} className="fixed inset-0 flex items-center justify-center  z-50" onClick={handleOverlayClick}>
             <div
                 className={`${bg} rounded shadow-lg modal-responsive`}>
                 <div>
