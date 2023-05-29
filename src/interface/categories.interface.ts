@@ -11,7 +11,7 @@ export interface CategoryProps {
       meals: CategoryProps[]
     }
   }
-   export interface DateModified {
+   export interface MealsDetailsProps {
     null: null;
     idMeal: string;
     strArea: string;

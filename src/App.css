@@ -21,9 +21,12 @@ body {
   100% {
     transform: rotate(360deg);
   }
-} 
-.video-container {
-  
+}
+.modal-responsive {
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: calc(100vw - 4rem);
 
 }
 
@@ -36,7 +39,9 @@ body {
 }
 @media screen and (max-width: 800px) {
   .video-frame {
-    width: 100%
+    width: 100%;
   }
-
+  .modal-responsive {
+    max-width: calc(100vw - 2rem);
+  }
 }

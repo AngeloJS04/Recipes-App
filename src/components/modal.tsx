@@ -6,18 +6,11 @@ const Modal = ({ setActive, children, title, bg }: { setActive: Function, childr
     };
 
     return (
-        <div style={{ backgroundColor: 'rgba(0,0,0,0.7)' }}
-            className="fixed inset-0 flex items-center justify-center  z-50" onClick={handleOverlayClick}
-
+        <div style={{ backgroundColor: 'rgba(0,0,0,0.7)' }} className="fixed inset-0 flex items-center justify-center  z-50" onClick={handleOverlayClick}
         >
             <div
-                style={{
-                    maxHeight: 'calc(100vh - 2rem)',
-                    maxWidth: 'calc(100vw - 2rem)',
-                    overflowY: 'auto',
-                    overflowX: 'hidden'
-                }}
-                className={`${bg} rounded shadow-lg`}>
+
+                className={`${bg} rounded shadow-lg modal-responsive`}>
                 <div>
                     <h2 className="text-2xl p-2 px-4 text-white font-bold mb-4">{title}</h2>
                     <button

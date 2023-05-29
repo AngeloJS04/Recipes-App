@@ -1,3 +1,4 @@
+// import { MealsDetailsProps } from "../../interface/categories.interface";
 import Stars from "./start";
 import { useState } from "react"
 
@@ -11,12 +12,14 @@ const MealsRecipe = ({ meal }: { meal: any }) => {
                 <img className='w-80 rounded-full border border-gray-400 p-3 items-center justify-center' src={meal?.strMealThumb} alt={meal?.strMeal} />
                 <div className="flex flex-col items-end">
                     <div className="mt-4 font-bold">
-                        from: <span className="bg-green-100  text-green-800 text-sm font-medium mr-2 px-1.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
-                            {meal.strArea}
-                        </span>
-                        category: <span className="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
-                            {meal.strCategory}
-                        </span>
+                        <em>
+                            from: <span className="bg-green-100  text-green-800 text-sm font-medium mr-2 px-1.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
+                                {meal.strArea}
+                            </span>
+                            category: <span className="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">
+                                {meal.strCategory}
+                            </span>
+                        </em>
                     </div>
                     <Stars />
                 </div>
@@ -49,11 +52,11 @@ const MealsRecipe = ({ meal }: { meal: any }) => {
                 </> :
 
                     <>
-                        <div className="col-span-12 md:col-span-4 m-3  ">
+                        <div className="col-span-12 md:col-span-4 m-3">
                             <div>
                                 <span className="text-2xl mb-5  font-bold text-white p-1 rounded-lg">Description</span>
                             </div>
-                            <span className="text-sm  text-center  text-white sm:text-sm">{meal.strInstructions}</span>
+                            <span className="text-sm  text-center  text-white sm:text-sm"><em>{meal.strInstructions}</em></span>
                             <div className=" mt-2">
 
 
@@ -66,12 +69,12 @@ const MealsRecipe = ({ meal }: { meal: any }) => {
 
                             {
                                 Array(count).fill(0).map((_, i) => {
-                                    return (<>
+                                    return (<div key={i}>
                                         {meal[`strIngredient${i + 1}`] && <div className="flex justify-between">
-                                            <span className="text-sm  text-center text-white sm:text-sm"><span className="px-2 mr-2 bg-yellow-500 rounded-full">{i + 1}</span>{meal[`strIngredient${i + 1}`]}</span>
-                                            <span className="text-sm   border-x-4 border-yellow-500 w-20  text-center text-white sm:text-sm">{meal[`strMeasure${i + 1}`]}</span>
+                                            <span className="text-sm  text-center text-white sm:text-sm"><span className="px-2 mr-2 bg-yellow-500 rounded-full">{i + 1}</span><em>{meal[`strIngredient${i + 1}`]}</em></span>
+                                            <span className="text-sm   border-x-4 border-yellow-500 w-20  text-center text-white sm:text-sm"><em>{meal[`strMeasure${i + 1}`]}</em></span>
                                         </div>}
-                                    </>)
+                                    </div>)
                                 })
                             }
                             <div className="flex justify-end items-end mt-5">
