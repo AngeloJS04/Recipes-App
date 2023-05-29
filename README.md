@@ -1,10 +1,8 @@
 # Recipes-App
 
-Sure! Here's a description you can use for your project on GitHub:
-
 ---
 
-🍽️ Recipe Explorer
+🍽️ Recipe App
 
 Recipe Explorer is a web application built with React, Vite, and TypeScript that allows users to discover and learn how to prepare various delicious meals. With a vast collection of recipes sourced from the popular API provided by The MealDB (https://www.themealdb.com/api.php), this app provides an immersive culinary experience for food enthusiasts of all levels.
 
