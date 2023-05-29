@@ -24,7 +24,7 @@ Recipe Explorer is a web application built with React, Vite, and TypeScript that
 - The MealDB API: A comprehensive API that provides a vast collection of recipes and meal information.
 
 🛠️ Installation and Usage:
-1. Clone the repository: `git clone https://github.com/your-username/Recipes-App.git`
+1. Clone the repository: `git clone https://github.com/AngeloJS04/Recipes-App.git`
 2. Install dependencies: `npm install`
 3. Run the development server: `npm run dev`
 4. Open your browser and visit: `http://localhost:5173`
