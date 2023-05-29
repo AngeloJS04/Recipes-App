@@ -12,7 +12,6 @@ Recipe Explorer is a web application built with React, Vite, and TypeScript that
 - Search for recipes by name, category, or main ingredient to find the perfect meal for any occasion.
 - Bookmark your favorite recipes for quick access and future reference.
 - Get inspired with a random recipe generator for those moments when you need culinary inspiration.
-- Share recipes with friends and family through social media integration.
 - Responsive design for seamless browsing across devices.
 
 🚀 Technologies Used:
