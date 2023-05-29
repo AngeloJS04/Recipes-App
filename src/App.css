@@ -27,7 +27,11 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   max-width: calc(100vw - 4rem);
-
+  scrollbar-width: thin;
+  scrollbar-color: #8b6f6f #181a1b;
+}
+::-webkit-scrollbar {
+  width: 4px;
 }
 
 .video-frame {
