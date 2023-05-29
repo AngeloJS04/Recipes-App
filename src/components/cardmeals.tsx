@@ -5,7 +5,6 @@ import ContainerMeals from "./container/containerMeals"
 import MealCard from "./mealCard"
 import MealsRecipe from "./mealReceipe"
 import Modal from "./modal"
-// import useFetch from "../hooks/useFetch"
 
 const CardMeals = ({ meals }: { meals: MealsDetailsProps[] }) => {
 
